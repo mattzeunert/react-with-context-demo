@@ -1,0 +1,31 @@
+{
+  "name": "react-with-context-demo",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Matt Zeunert",
+  "license": "ISC",
+  "dependencies": {
+    "react": "~0.14.0",
+    "react-dom": "~0.14.0"
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "jest-cli": "*",
+    "react-addons-test-utils": "~0.14.0",
+    "react-with-context": "^1.0.0"
+  },
+  "scripts": {
+    "test": "jest __tests__"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  }
+}
